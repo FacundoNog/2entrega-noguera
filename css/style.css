@@ -254,3 +254,24 @@ footer {
 .copy {
     text-align: center;
 }
+
+
+@media (max-width: 768px) {
+    main{
+        background-color: #498162;
+    }
+
+}
+
+@media (max-width: 768px) {
+    grid-container {
+    grid-template-columns: 1fr 1.0fr; 
+    grid-template-rows: 0.1fr 1fr 0.5fr 0.1fr;
+    grid-template-areas: 
+    "header   header "  
+    "main     main  "   
+    "aside    aside   " 
+    "footer   footer   "
+    ;
+}
+}
