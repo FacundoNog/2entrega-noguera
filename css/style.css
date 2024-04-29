@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  "Roboto Mono", monospace;
+}
+
+/* header */
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.5fr 0.1fr;
+    grid-template-areas:
+    "header   header   header"
+    "main     main     main"
+    "aside    aside    aside"
+    "footer   footer   footer"
+    ;
+}
+
+.encabezado {
+    background-color: #d8a5df;
+    width: 2000px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: sticky;
+    top: 0;
+    padding-bottom: 30px;
+    grid-area: header;
+
+}
+
+.menuencabezado {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+   
+
+}
+
+.menuencabezado li {
+    display: inline;
+    margin-right: 20px;
+    text-align: center;
+    
+   
+
+}
+
+.menuencabezado li a {
+    color: #100001;
+    text-align: center;
+    text-decoration: none;
+}
+.boom {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 5px;
+   }
+
+/* main */
+main {
+    grid-area: main;
+}
+.mainimg {
+    background: #ffffff url(../assets/heladoprinc.jpeg) center center/cover no-repeat;
+    width: 100%;
+    height: 400px;
+}
+.segtitulo {
+    text-align: center;
+    padding: 120px;
+    font-size: 60px;
+    
+}
+
+.imgprinc {
+    width: 100%;
+    height: 702px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parrafopri {
+    text-align: center;
+    background-color: #d8a5df;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.tercertitulo {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.comentercertitulo {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.titulos1 {
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.classh3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+section {
+    background-color: #dec9e0;
+
+}
+
+.contimag {
+  width: 200px;
+ 
+}
+
+.contimag img{
+   width: 100%;
+}
+
+
+.gusto {
+    background-color: pink;
+    width: 15%;
+    border-radius: 10px;
+    border: 1px solid;
+    display: flex;
+    display: inline-block;
+    padding-left: 4%;
+    padding-top: 1%;
+    justify-content: space-around;
+    margin-left: 80px;
+    flex-flow: wrap;
+
+   
+}
+
+
+
+.gusto p {
+    text-align: center;
+
+}
+
+
+h3 {
+    text-align: center;
+}
+
+
+
+.boton {
+   
+    padding: 10px 10px;
+    background-color: #b204c2;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    padding-top: 10px;
+
+}
+
+.sabores2 {
+    padding-bottom: 50px;
+}
+
+/* Aside */ 
+
+
+.contacto {
+    background-color: #d8a5df;
+    padding-top: 50px;
+    grid-area: aside;
+    width: 100%;
+
+  }
+
+.sitiosweb {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+   
+.direccion {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+
+.sucursales {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+/* footer */ 
+
+
+
+footer {
+    background-color: #d8a5df;
+    grid-area: footer;
+    width: 2000px;
+    }
+
+.menufooter {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 22px;
+
+}
+
+.menufooter li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menufooter li a {
+    color: #100001;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.copy {
+    text-align: center;
+}
