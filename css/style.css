@@ -9,9 +9,9 @@
 .grid-container {
 
     display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
-    grid-template-rows: 0.1fr 1fr 0.5fr 0.1fr;
-    grid-template-areas:
+    grid-template-columns: min-content;
+    grid-template-rows: min-content;
+    grid-template-areas: 
     "header   header   header"
     "main     main     main"
     "aside    aside    aside"
@@ -20,8 +20,8 @@
 }
 
 .encabezado {
-    background-color: #d8a5df;
-    width: 2000px;
+    background-color: #9e18af;
+    width: 100%;
     background-size: cover;
     background-attachment: fixed;
     position: sticky;
@@ -133,21 +133,21 @@ section {
    width: 100%;
 }
 
+.bloquesabores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
 
 .gusto {
     background-color: pink;
-    width: 15%;
     border-radius: 10px;
     border: 1px solid;
     display: flex;
     display: inline-block;
-    padding-left: 4%;
-    padding-top: 1%;
-    justify-content: space-around;
-    margin-left: 80px;
     flex-flow: wrap;
-
-   
+    margin-left: 10px;
 }
 
 
@@ -192,14 +192,20 @@ h3 {
     padding-top: 50px;
     grid-area: aside;
     width: 100%;
+    display: grid;
 
+  }
+
+  .linkcontacto {
+    margin-left: 15px;
   }
 
 .sitiosweb {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding-bottom: 50px;
+    margin-left: 15px;
 }
    
 .direccion {
@@ -223,6 +229,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 
@@ -231,9 +238,10 @@ h3 {
 
 
 footer {
-    background-color: #d8a5df;
+    background-color: #9e18af;
     grid-area: footer;
-    width: 2000px;
+    width: 100%;
+    display: grid;
     }
 
 .menufooter {
@@ -248,7 +256,7 @@ footer {
 
 .menufooter li {
     display: inline;
-    margin-right: 20px;
+   
 }
 
 .menufooter li a {
@@ -263,22 +271,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
-    main{
-        background-color: #498162;
-    }
 
-}
 
-@media (max-width: 768px) {
-    grid-container {
-    grid-template-columns: 1fr 1.0fr; 
-    grid-template-rows: 0.1fr 1fr 0.5fr 0.1fr;
-    grid-template-areas: 
-    "header   header "  
-    "main     main  "   
-    "aside    aside   " 
-    "footer   footer   "
-    ;
-}
-}
+
+    
