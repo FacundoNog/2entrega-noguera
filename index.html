@@ -2,28 +2,61 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <title>BOOM Helados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>prueba BOOM Helados</title>
     
 </head>
 <body>
     <div class="grid-container">
+       
         <header class="encabezado">
             <h1 class="boom">BOOM Helados</h1>
-            <nav>
-                <ul class="encabezado__menu">
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="./html5/nosotros.html">Nosotros</a></li>
-                    <li><a href="./html5/sucursales.html">Sucursales</a></li>
-                    <li><a href="./html5/sabores.html">Sabores</a></li>
-                    <li><a href="./html5/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BOOM</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./html5/nosotros.html">Nosotros</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./html5/sucursales.html">Sucursales</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./html5/sabores.html">Sabores</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./html5/contacto.html">Contacto</a>
+                          
+                      </ul>
+                      <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </header>
+        
+
         
         <main>
 
@@ -56,17 +89,18 @@
                             <div class="saboreshel__gustos__imag">
                                 <img src="./assets/limon.jpg" alt="Limon"><p>Limon</p>
                             </div>
+                        </div>
                     </article>
-                </div>
+                
 
             </section>
            
                 
             <section class="sabores2">
-                <h3 class="titulos1">EN TOTAL TENEMOS ¡41! SABORES ÚNICOS PARA QUE DISFRUTES</h3>
+                      <h3 class="titulos1">EN TOTAL TENEMOS ¡41! SABORES ÚNICOS PARA QUE DISFRUTES</h3>
                     <div class="sabores2__sucursales">
-                    <a href="./html5/sabores.html" class="sabores2__boton">Buscá tu favorito aquí</a></div>
-                    </div>
+                        <a href="./html5/sabores.html" class="sabores2__boton">Buscá tu favorito aquí</a>
+                    </div>  
             </section>
             
         </main>
@@ -85,11 +119,11 @@
             
             <div class="contacto__sucursales">
                 <a href="./html5/sucursales.html" class="contacto__sucursales__boton">Encontrá tu Sucursal mas Cercana!</a>
-                </div>
-               <div class="contacto__sucursales__containermapa1">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.904982411296!2d-55.91456608570953!3d-27.366347882892434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942e4e26817b2245%3A0xa55dd3e1a4d23e4!2sAvenida%20Lavalle%202323%2C%20Posadas%2C%20Misiones!5e0!3m2!1ses!2sar!4v1648246489571!5m2!1ses!2sar" width="400" height="400" style="border:0;" loading="lazy" class="frame"></iframe></iframe>
-               </div>
             </div>
+            <div class="contacto__sucursales__containermapa1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.904982411296!2d-55.91456608570953!3d-27.366347882892434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942e4e26817b2245%3A0xa55dd3e1a4d23e4!2sAvenida%20Lavalle%202323%2C%20Posadas%2C%20Misiones!5e0!3m2!1ses!2sar!4v1648246489571!5m2!1ses!2sar" width="400" height="400" style="border:0;" loading="lazy" class="frame"></iframe>
+            </div>
+           
         </aside>
         
     
@@ -105,6 +139,10 @@
             </nav>
             <p class="copy">Copyright since 2024. FacundoNog</p>
         </footer>
-     </div>
+        
+    </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> 
 </body>
 </html>

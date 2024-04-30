@@ -6,6 +6,7 @@
 
 /* header */
 
+
 .grid-container {
 
     display: grid;
@@ -25,6 +26,17 @@
     background-size: cover;
     background-attachment: fixed;
     position: sticky;
+    top: 0;
+    padding-bottom: 30px;
+    grid-area: header;
+
+}
+
+.encabezado2 {
+    background-color: #9e18af;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
     top: 0;
     padding-bottom: 30px;
     grid-area: header;
@@ -63,6 +75,10 @@
     padding-bottom: 5px;
    }
 
+   .-titlogo {
+    color: #b204c2;
+    font-size: 40px;
+   }
 /* main */
 main {
     grid-area: main;
@@ -81,7 +97,7 @@ main {
 
 .imgprinc {
     width: 100%;
-    height: 702px;
+    height: 902px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -92,6 +108,7 @@ main {
     background-color: #d8a5df;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .tercertitulo {
@@ -189,13 +206,36 @@ h3 {
     justify-content: center;
 }
 
+/* Main Nosotros */
+
+.seccionprinc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.seccionprinc__imghelado {
+    width: 50%;
+
+}
+
+.seccionprinc__imghelado__titulo {
+    font-size: xx-large;
+
+}
+
+
+
+
+
 /* Aside */ 
 
 
 .contacto {
     background-color: #d8a5df;
     padding-top: 50px;
-    grid-area: aside;
     width: 100%;
     display: grid;
     grid-area: aside;
@@ -219,6 +259,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 50px;
+    font-size: 20px;
 }
 
 
@@ -297,7 +338,8 @@ footer {
 }
 
 
-
-
+.imagensucu {
+    margin: 0 auto;
+}
 
     
