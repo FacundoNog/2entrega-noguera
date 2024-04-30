@@ -31,7 +31,7 @@
 
 }
 
-.menuencabezado {
+.encabezado__menu{
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -42,16 +42,15 @@
 
 }
 
-.menuencabezado li {
+.encabezado__menu li {
     display: inline;
     margin-right: 20px;
     text-align: center;
     
    
-
 }
 
-.menuencabezado li a {
+.encabezado__menu  li a {
     color: #100001;
     text-align: center;
     text-decoration: none;
@@ -124,23 +123,23 @@ section {
 
 }
 
-.contimag {
+.saboreshel__gustos__imag {
   width: 200px;
  
 }
 
-.contimag img{
+.saboreshel__gustos__imag img{
    width: 100%;
 }
 
-.bloquesabores {
+.saboreshel {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
 }
 
-.gusto {
+.saboreshel__gustos {
     background-color: pink;
     border-radius: 10px;
     border: 1px solid;
@@ -148,14 +147,12 @@ section {
     display: inline-block;
     flex-flow: wrap;
     margin-left: 10px;
-}
-
-
-
-.gusto p {
     text-align: center;
-
 }
+
+
+
+
 
 
 h3 {
@@ -182,6 +179,14 @@ h3 {
 
 .sabores2 {
     padding-bottom: 50px;
+    justify-content: center;
+
+}
+
+.sabores2__sucursales {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 /* Aside */ 
@@ -196,11 +201,11 @@ h3 {
 
   }
 
-  .linkcontacto {
+  .contacto__sitiosweb__linkcontacto {
     margin-left: 15px;
   }
 
-.sitiosweb {
+.contacto__sitiosweb {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,7 +213,7 @@ h3 {
     margin-left: 15px;
 }
    
-.direccion {
+.contacto__direccion {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -216,14 +221,36 @@ h3 {
 }
 
 
-.sucursales {
+.contacto__sucursales {
     padding-bottom: 40px;
     display: flex;
     justify-content: center;
+   
 
 }
 
-.containermapa1 {
+.contacto__sucursales__boton {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+.contacto__sucursales__botonedit {
+    
+    padding: 10px 10px;
+    background-color: #b204c2;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    padding-top: 10px;
+
+}
+.contacto__sucursales__containermapa1 {
     width: 100%;
     height: 400px; 
     display: flex;
@@ -242,6 +269,7 @@ footer {
     grid-area: footer;
     width: 100%;
     display: grid;
+    flex-wrap: wrap;
     }
 
 .menufooter {
