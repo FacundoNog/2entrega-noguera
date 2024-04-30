@@ -161,7 +161,7 @@ h3 {
 
 
 
-.boton {
+.sabores2__boton {
    
     padding: 10px 10px;
     background-color: #b204c2;
@@ -198,6 +198,7 @@ h3 {
     grid-area: aside;
     width: 100%;
     display: grid;
+    grid-area: aside;
 
   }
 
@@ -233,10 +234,6 @@ h3 {
     justify-content: center;
     display: flex;
     align-items: center;
-
-}
-.contacto__sucursales__botonedit {
-    
     padding: 10px 10px;
     background-color: #b204c2;
     color: #fff;
@@ -250,6 +247,7 @@ h3 {
     padding-top: 10px;
 
 }
+
 .contacto__sucursales__containermapa1 {
     width: 100%;
     height: 400px; 
