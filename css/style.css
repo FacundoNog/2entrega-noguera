@@ -373,6 +373,9 @@ footer {
         width: 100%;
         display: flow-root;
     }
+    .contacto__sitiosweb {
+        display: ruby;
+    }
     .copy {
         margin-bottom: 0px;
        }
