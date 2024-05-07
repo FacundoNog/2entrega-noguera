@@ -338,6 +338,7 @@ footer {
     }
     .boom {
         display: flex;
+        margin-left: 10px;
     }
 
     .copy {
@@ -374,7 +375,7 @@ footer {
         display: flow-root;
     }
     .contacto__sitiosweb {
-        display: ruby;
+        display: flex;
     }
     .copy {
         margin-bottom: 0px;
