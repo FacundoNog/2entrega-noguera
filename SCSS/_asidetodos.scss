@@ -1,0 +1,42 @@
+/* Aside */
+.contacto {
+    background-image: url(../assets/fondoblanco.jpg);
+    @include spaciosorden (80px, 70px);
+    width: 100%;
+    grid-area: aside;
+    display: grid;
+
+    &__sitiosweb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 40px;
+        margin-left: 15px;
+
+        &__linkcontacto {
+            margin-left: 15px;
+        }
+    }
+
+    &__direccion {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+        font-size: 20px;
+    }
+
+    &__sucursales {
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+
+        &__boton {
+            @include botonbusqueda;
+        }
+
+        &__containermapa1 {
+            @include containermapa;
+        }
+    }
+}

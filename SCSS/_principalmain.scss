@@ -1,0 +1,357 @@
+/* Main Index*/
+main {
+    grid-area: main;
+}
+
+.mainimg {
+    background: #ffffff url(../assets/heladoprinc.jpeg) center center/cover no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+.segtitulo {
+    text-align: center;
+    padding: 120px;
+    font-family: $titulo-principal;
+    font-size: map-get($titulos, principal );
+    
+    
+    
+}
+
+.parrafopri {
+    text-align: center;
+    background-image: url(../assets/fondoblanco.jpg);
+    @include spaciosorden (40px, 40px);
+    margin-bottom: 0px;
+    font-size: map-get($titulos, terciario  );
+}
+
+.tercertitulo {
+    text-align: center;
+    @include spaciosorden (20px, 40px);
+    font-size: map-get($titulos, secundario );
+}
+
+.comentercertitulo {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.titulos1 {
+    justify-content: center;
+    @include spaciosorden (50px, 40px);
+}
+
+.classh3 {
+    @include spaciosorden (30px, 30px);
+}
+
+section {
+    background-color: #dec9e0;
+}
+
+.sabores {
+
+
+    @include spaciosorden (100px, 40px);
+    background-image: url(../assets/2az.jpg);
+}
+
+
+
+.saboreshel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    &__gustos {
+        width: 200px;
+       &__imag {
+        background-color: rgb(209, 199, 199);
+        border-radius: 10px;
+        border: 1px solid;
+        display: flex;
+        display: inline-block;
+        flex-flow: wrap;
+        margin-left: 10px;
+        text-align: center;
+        img {
+            width: 100%;
+        }
+      }
+    }
+}
+
+
+
+
+
+.sabores2 {
+    padding-bottom: 50px;
+    justify-content: center;
+    background-image: url(../assets/fondoblanco.jpg);
+      
+     &__sucursales {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    &__boton {
+        @include botonbusqueda
+
+    }
+
+}
+
+
+h3 {
+    text-align: center;
+}
+
+
+
+
+
+/* Main Nosotros */
+
+.seccionprinc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include spaciosorden (70px, 50px);
+
+    p {
+        font-size: map-get($titulos, terciario);
+        text-align: center;
+
+    }
+
+    &__imghelado {
+        width: 50%;
+
+        &__titulo {
+           
+            font-size: map-get($titulos, secundario );
+        }
+        
+        }
+    }
+
+
+
+.carousel-item img {
+    max-height: 400px;
+}
+
+.principalnosotros {
+    @include spaciosorden (70px, 70px);
+    background-image: url(../assets/vecteezy_helado-surtido-en-tazas_2032261.jpg);
+    background-size: 100% 100%; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+
+
+/* Main Contacto */
+
+.titucontacto {
+    text-align: center;
+    padding: 50px;
+    font-size: map-get($titulos, secundario );
+    font-family: $titulo-principal;
+    background-color: #ebebde;
+    margin-top: 10px
+}
+
+
+.contactoprinc {
+    display: flex;
+    &__imag 
+        {
+            width: 60%;
+            padding-right: 50px;
+        
+            &__form 
+            {
+                display: grid;
+                position: static;
+                display: grid;
+                height: auto;
+                width: 100%;
+                min-height: auto;
+                grid-template-rows: repeat(5, min-content) 1fr;
+                grid-template-columns: 100%;
+                margin-right: 200px;
+            }
+        }
+    }
+
+
+    .maincontacto {
+       background-color: #ebebde;
+       @include spaciosorden (50px, 5px);
+
+    }
+
+
+    /* Main Sucursales */
+
+    .mainsucursales {
+        background-color: #ffffff;
+        margin-bottom: 5%;
+    }
+
+    .titulosucursales {
+         
+            text-align: center;
+            font-size: map-get($titulos, secundario );
+            @include spaciosorden (50px, 50px);
+        }
+    
+
+    .ciudadsucursales {
+        
+            
+          
+            justify-content: center;
+            font-size: map-get($titulos, terciario );
+            font-style: unset;
+            display: grid;
+            margin-top: 60px;
+            font-style: normal;
+        
+    }
+
+    .tituciudad {
+        margin-top: 50px;
+    }
+
+    .seccionbuscador {
+        
+            display: grid;
+            justify-content: center;
+            margin-top: 50px;
+           
+
+            &__texto {
+                width: 70%
+
+            }
+
+            &__sucursal {
+                margin-bottom: 60px;
+                margin-left: 20%;
+                width: 90%;
+            }
+
+            
+
+        
+    }
+
+    /* Main Sabores */
+
+    .fondosabores {
+        background-image: url(../assets/fondoblanco.jpg);
+        background-color: red;
+        display: grid;
+
+        
+    }
+    
+    .titulosabores {
+        display: grid;
+        &__1 {
+            
+                display: flex;
+                justify-content: center;
+                margin-top: 100px;
+                margin-bottom: 80px;
+             }
+        
+    }
+ 
+    .mainsabores {
+        display: flex;
+    
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 100px;
+            flex-wrap: wrap;
+     
+        
+        &__hel1 {
+            margin-left: 50px;
+        
+        p {
+            display: flex;
+            justify-content: center;
+            font-size: x-large;
+        }
+        }
+    }
+       
+    
+
+    .mainsabores2 {
+        display: flex;
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 100px;
+            flex-wrap: wrap;
+     
+        
+        &__hel2 {
+            margin-left: 50px;
+        
+        p {
+            display: flex;
+            justify-content: center;
+            font-size: $font-size;
+        }
+        }
+    }
+
+    
+    .mainsabores3 {
+        display: flex;
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 100px;
+            flex-wrap: wrap;
+     
+        
+        &__hel3 {
+            margin-left: 50px;
+        
+        p {
+            display: flex;
+            justify-content: center;
+            font-size: $font-size;
+        }
+        }
+    }
+
+    .buscasabores {
+        margin-bottom: 100px;
+
+        &__tit {
+            margin-bottom: 50px;
+
+        }
+        &__buscador {
+            display: block;
+            margin: 0 auto;
+            width: 30%;
+            text-align: center;
+        }
+    }

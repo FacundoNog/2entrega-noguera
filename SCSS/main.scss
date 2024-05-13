@@ -1,0 +1,34 @@
+//reset - variables// 
+
+@import './reset/variables';
+@import './reset/mixins';
+@import './reset/configreset';
+
+
+
+//header
+
+@import 'encabezado';
+
+//main
+
+@import 'principalmain';
+
+
+//aside
+
+@import 'asidetodos';
+
+//footer
+
+@import 'piedepag';
+
+
+//media queries
+
+@import './reset/mediaq';
+
+
+
+
+

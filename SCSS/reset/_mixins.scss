@@ -1,0 +1,38 @@
+// MIXINS //
+
+@mixin botonbusqueda  {
+    padding: 10px 10px;
+    background-color:  rgb(0 0 0 / 85%);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    padding-top: 10px;
+
+}
+
+@mixin containermapa {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+}
+
+@mixin espaciosorden {
+    padding-bottom: 40px;
+    padding-top: 40px;
+
+}
+
+// con parametros //
+
+@mixin spaciosorden ($pb, $pt) {
+    padding-bottom: $pb;
+    padding-top: $pt;
+}

@@ -1,0 +1,29 @@
+// variables
+// contenedor que tiene un nombre y voy a poder invocar cuando lo necesite
+
+// se le agrega un nombre con el signo $ y despues un valor. 
+
+$titulo-principal: "Dancing Script", cursive;
+$fondo-color-principal: #fb3737;
+$font-size: x-large;
+
+
+// maps
+
+$titulos:(
+
+   principal: 60px,
+   secundario: 40px,
+   terciario: 20px,
+   normal: 10px,
+
+
+);
+
+// each
+
+@each $llave, $valor in $titulos{
+    .titulo__#{$llave}{
+        font-size: $valor;
+    }
+}
