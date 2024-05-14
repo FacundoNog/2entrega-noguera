@@ -30,6 +30,12 @@
 
 }
 
+@mixin fondoimagen {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
 // con parametros //
 
 @mixin spaciosorden ($pb, $pt) {

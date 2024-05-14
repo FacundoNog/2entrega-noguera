@@ -4,16 +4,18 @@ main {
 }
 
 .mainimg {
-    background: #ffffff url(../assets/heladoprinc.jpeg) center center/cover no-repeat;
+    background: #ffffff url(../assets/vecteezy_helado-surtido-en-tazas_2032261.jpg) center center/cover no-repeat;
     width: 100%;
-    height: 400px;
+    height: 600px;
 }
 
 .segtitulo {
     text-align: center;
-    padding: 120px;
     font-family: $titulo-principal;
     font-size: map-get($titulos, principal );
+    text-align: center;
+    padding: 50px;
+    font-weight: bold;
     
     
     
@@ -38,6 +40,7 @@ main {
     font-weight: bold;
     padding-top: 30px;
     padding-bottom: 30px;
+    font-size: xx-large;
 }
 
 .titulos1 {
@@ -58,6 +61,8 @@ section {
 
     @include spaciosorden (100px, 40px);
     background-image: url(../assets/2az.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -97,6 +102,9 @@ section {
     padding-bottom: 50px;
     justify-content: center;
     background-image: url(../assets/fondoblanco.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
       
      &__sucursales {
         display: flex;
@@ -127,6 +135,8 @@ h3 {
     flex-direction: column;
     align-items: center;
     @include spaciosorden (70px, 50px);
+    background-image: url(../assets/fondoblanco.jpg);
+    @include fondoimagen;
 
     p {
         font-size: map-get($titulos, terciario);
@@ -206,9 +216,12 @@ h3 {
     /* Main Sucursales */
 
     .mainsucursales {
-        background-color: #ffffff;
-        margin-bottom: 5%;
-    }
+        background-image: url(../assets/heladosfruti.jpg);
+        
+        @include fondoimagen
+        }
+        
+    
 
     .titulosucursales {
          
@@ -228,6 +241,10 @@ h3 {
             display: grid;
             margin-top: 60px;
             font-style: normal;
+
+            &__calles {
+                font-weight: bold;
+            }
         
     }
 
@@ -243,14 +260,15 @@ h3 {
            
 
             &__texto {
-                width: 70%
+                width: 100%;
+                text-align: center;
 
             }
 
             &__sucursal {
                 margin-bottom: 60px;
-                margin-left: 20%;
-                width: 90%;
+                width: 450px;
+                
             }
 
             
@@ -264,6 +282,7 @@ h3 {
         background-image: url(../assets/fondoblanco.jpg);
         background-color: red;
         display: grid;
+        @include fondoimagen
 
         
     }
