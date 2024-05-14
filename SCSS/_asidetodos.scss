@@ -5,6 +5,7 @@
     width: 100%;
     grid-area: aside;
     display: grid;
+    @include fondoimagen;
 
     &__sitiosweb {
         display: flex;
