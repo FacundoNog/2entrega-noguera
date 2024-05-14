@@ -52,9 +52,14 @@
     }
 
 
-    .mainsabores, .mainsabores2  .mainsabores3 {
+    .mainsabores, .mainsabores2,  .mainsabores3 {
     margin-bottom:  30px;
-              
+
+             &__hel1,
+             &__hel2,
+             &__hel3 {
+            margin-left: 0px;
+             }
             &__hel3__img,
             &__hel2__img,
             &__hel1__img {
@@ -128,6 +133,7 @@
         padding: 120px;
         font-size: map-get($titulos, secundario );
     }
+
     .contacto__sucursales__containermapa1 {
         width: 100%;
         display: flex;

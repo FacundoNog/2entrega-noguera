@@ -509,10 +509,13 @@ footer {
   .copy {
     font-size: 15px;
   }
-  .mainsabores, .mainsabores2 .mainsabores3 {
+  .mainsabores, .mainsabores2, .mainsabores3 {
     margin-bottom: 30px;
   }
-  .mainsabores__hel3__img, .mainsabores__hel2__img, .mainsabores__hel1__img, .mainsabores2 .mainsabores3__hel3__img, .mainsabores2 .mainsabores3__hel2__img, .mainsabores2 .mainsabores3__hel1__img {
+  .mainsabores__hel1, .mainsabores__hel2, .mainsabores__hel3, .mainsabores2__hel1, .mainsabores2__hel2, .mainsabores2__hel3, .mainsabores3__hel1, .mainsabores3__hel2, .mainsabores3__hel3 {
+    margin-left: 0px;
+  }
+  .mainsabores__hel3__img, .mainsabores__hel2__img, .mainsabores__hel1__img, .mainsabores2__hel3__img, .mainsabores2__hel2__img, .mainsabores2__hel1__img, .mainsabores3__hel3__img, .mainsabores3__hel2__img, .mainsabores3__hel1__img {
     max-width: 250px;
   }
   .contactoprinc__imag {
