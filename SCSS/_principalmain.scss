@@ -70,7 +70,7 @@ section {
     &__gustos {
         width: 200px;
        &__imag {
-        background-color: rgb(209, 199, 199);
+     
         border-radius: 10px;
         border: 1px solid;
         display: flex;
@@ -78,6 +78,10 @@ section {
         flex-flow: wrap;
         margin-left: 10px;
         text-align: center;
+        background: #DAE2F8;
+        background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8); 
+        background: linear-gradient(to right, #D6A4A4, #DAE2F8); 
+
         img {
             width: 100%;
         }

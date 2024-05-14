@@ -32,6 +32,7 @@
   padding-bottom: 30px;
   display: grid;
   grid-area: header;
+  background: linear-gradient(to right, #ffb6bf, #e7122b);
 }
 
 .encabezado2 {
@@ -128,7 +129,6 @@ section {
   width: 200px;
 }
 .saboreshel__gustos__imag {
-  background-color: rgb(209, 199, 199);
   border-radius: 10px;
   border: 1px solid;
   display: flex;
@@ -136,6 +136,9 @@ section {
   flex-flow: wrap;
   margin-left: 10px;
   text-align: center;
+  background: #DAE2F8;
+  background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);
+  background: linear-gradient(to right, #D6A4A4, #DAE2F8);
 }
 .saboreshel__gustos__imag img {
   width: 100%;
