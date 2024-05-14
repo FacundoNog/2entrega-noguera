@@ -11,6 +11,7 @@
     display: grid;
     grid-area: header;
     background:  linear-gradient(to right, #ffb6bf, #e7122b);
+    z-index: 999;
 }
 
 .encabezado2 {

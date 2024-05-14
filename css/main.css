@@ -33,6 +33,7 @@
   display: grid;
   grid-area: header;
   background: linear-gradient(to right, #ffb6bf, #e7122b);
+  z-index: 999;
 }
 
 .encabezado2 {
@@ -64,16 +65,18 @@ main {
 }
 
 .mainimg {
-  background: #ffffff url(../assets/heladoprinc.jpeg) center center/cover no-repeat;
+  background: #ffffff url(../assets/vecteezy_helado-surtido-en-tazas_2032261.jpg) center center/cover no-repeat;
   width: 100%;
-  height: 400px;
+  height: 600px;
 }
 
 .segtitulo {
   text-align: center;
-  padding: 120px;
   font-family: "Dancing Script", cursive;
   font-size: 60px;
+  text-align: center;
+  padding: 50px;
+  font-weight: bold;
 }
 
 .parrafopri {
@@ -97,6 +100,7 @@ main {
   font-weight: bold;
   padding-top: 30px;
   padding-bottom: 30px;
+  font-size: xx-large;
 }
 
 .titulos1 {
@@ -250,7 +254,7 @@ h3 {
 
 /* Main Sucursales */
 .mainsucursales {
-  background-image: url(../assets/fondoblanco.jpg);
+  background-image: url(../assets/heladosfruti.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -271,6 +275,9 @@ h3 {
   margin-top: 60px;
   font-style: normal;
 }
+.ciudadsucursales__calles {
+  font-weight: bold;
+}
 
 .tituciudad {
   margin-top: 50px;
@@ -282,12 +289,12 @@ h3 {
   margin-top: 50px;
 }
 .seccionbuscador__texto {
-  width: 70%;
+  width: 100%;
+  text-align: center;
 }
 .seccionbuscador__sucursal {
   margin-bottom: 60px;
-  margin-left: 20%;
-  width: 90%;
+  width: 450px;
 }
 
 /* Main Sabores */
@@ -401,6 +408,7 @@ h3 {
   flex-wrap: wrap;
   padding-bottom: 40px;
   font-size: 20px;
+  text-align: center;
 }
 .contacto__sucursales {
   padding-bottom: 40px;
@@ -464,7 +472,10 @@ footer {
   .segtitulo {
     text-align: center;
     padding: 120px;
-    font-size: 20px;
+    font-size: 30px;
+  }
+  .parrafopri {
+    font-size: 10px;
   }
   .contacto__sitiosweb {
     display: flex;
@@ -492,19 +503,11 @@ footer {
   .contacto__direccion {
     font-size: 10px;
   }
-  .segtitulo {
-    font-size: 15px;
-    padding: 100px;
-  }
   .boom {
     display: flex;
   }
   .copy {
     font-size: 15px;
-  }
-  .parrafopri {
-    width: 100%;
-    font-size: xx-small;
   }
   .mainsabores, .mainsabores2 .mainsabores3 {
     margin-bottom: 30px;
@@ -529,6 +532,10 @@ footer {
   .seccionbuscador {
     margin-left: none;
   }
+  .seccionbuscador__sucursal {
+    margin-left: 5px;
+    width: 300px;
+  }
   .buscasabores__buscador {
     display: block;
     margin: 0 auto;
@@ -543,6 +550,9 @@ footer {
     margin-bottom: 80px;
     flex-wrap: wrap;
     text-align: center;
+  }
+  .mapsucu {
+    display: none;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 961px) {
