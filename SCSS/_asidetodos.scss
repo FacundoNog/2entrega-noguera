@@ -16,8 +16,17 @@
 
         &__linkcontacto {
             margin-left: 15px;
+
+            img {
+                width: 100px;
+                height: 100px; 
+                object-fit: cover; 
+                border-radius: 40%; 
+            }
         }
     }
+
+
 
     &__direccion {
         justify-content: center;

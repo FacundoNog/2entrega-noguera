@@ -4,9 +4,10 @@ main {
 }
 
 .mainimg {
-    background: #ffffff url(../assets/fondoprinc.jpg) center center/cover no-repeat;
+    background: #ffffff url(../assets/fondoprinc.jpg);
     width: 100%;
     height: 600px;
+    background-position-y: bottom;
 }
 
 .segtitulo {
@@ -14,7 +15,7 @@ main {
     font-family: $titulo-principal;
     font-size: map-get($titulos, principal);
     text-align: center;
-    padding: 50px;
+    padding: 200px;
     font-weight: bold;
 
 
@@ -24,7 +25,9 @@ main {
 .containerparrafo {
     background-image: url(../assets/fondoblanco.jpg);
     background-size: cover;
+    padding-bottom: 40px;
 }
+
 .parrafopri {
     text-align: center;
     @include spaciosorden (40px, 40px);
@@ -32,21 +35,16 @@ main {
     font-size: map-get($titulos, terciario);
     max-width: 70%;
     margin: 0 auto;
+    font-weight: bold;
 }
 
 .tercertitulo {
     text-align: center;
-    @include spaciosorden (20px, 40px);
+    @include spaciosorden (80px, 50px);
     font-size: map-get($titulos, secundario);
 }
 
-.comentercertitulo {
-    text-align: center;
-    font-weight: bold;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: xx-large;
-}
+
 
 .titulos1 {
     justify-content: center;
@@ -64,7 +62,7 @@ section {
 .sabores {
 
 
-    @include spaciosorden (100px, 40px);
+    @include spaciosorden (100px, 0px);
     background-image: url(../assets/2az.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -78,23 +76,29 @@ section {
     flex-wrap: wrap;
 
     &__gustos {
-        width: 200px;
+        width: 210px;
+        margin: 10px;
 
         &__imag {
-
             border-radius: 10px;
             border: 1px solid;
             display: flex;
-            display: inline-block;
-            flex-flow: wrap;
-            margin-left: 10px;
-            text-align: center;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
             background: #DAE2F8;
             background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);
             background: linear-gradient(to right, #D6A4A4, #DAE2F8);
 
             img {
                 width: 100%;
+                height: auto; 
+                max-height: 150px; 
+            }
+
+            p {
+                margin: 10px 0 0 0; 
+                text-align: center;
             }
         }
     }
@@ -140,6 +144,7 @@ h3 {
     font-size: map-get($titulos, secundario);
 
 }
+
 .descripcionboom {
     margin-left: 10%;
     margin-right: 10%;
@@ -161,8 +166,8 @@ h3 {
         margin-right: 10%;
         padding-top: 40px;
 
-      }
-    
+    }
+
 
     &__imghelado {
         width: 50%;

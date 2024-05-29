@@ -64,9 +64,10 @@ main {
 }
 
 .mainimg {
-  background: #ffffff url(../assets/fondoprinc.jpg) center center/cover no-repeat;
+  background: #ffffff url(../assets/fondoprinc.jpg);
   width: 100%;
   height: 600px;
+  background-position-y: bottom;
 }
 
 .segtitulo {
@@ -74,13 +75,14 @@ main {
   font-family: "Dancing Script", cursive;
   font-size: 60px;
   text-align: center;
-  padding: 50px;
+  padding: 200px;
   font-weight: bold;
 }
 
 .containerparrafo {
   background-image: url(../assets/fondoblanco.jpg);
   background-size: cover;
+  padding-bottom: 40px;
 }
 
 .parrafopri {
@@ -91,21 +93,14 @@ main {
   font-size: 20px;
   max-width: 70%;
   margin: 0 auto;
+  font-weight: bold;
 }
 
 .tercertitulo {
   text-align: center;
-  padding-bottom: 20px;
-  padding-top: 40px;
+  padding-bottom: 80px;
+  padding-top: 50px;
   font-size: 40px;
-}
-
-.comentercertitulo {
-  text-align: center;
-  font-weight: bold;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-size: xx-large;
 }
 
 .titulos1 {
@@ -125,7 +120,7 @@ section {
 
 .sabores {
   padding-bottom: 100px;
-  padding-top: 40px;
+  padding-top: 0px;
   background-image: url(../assets/2az.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -137,22 +132,28 @@ section {
   flex-wrap: wrap;
 }
 .saboreshel__gustos {
-  width: 200px;
+  width: 210px;
+  margin: 10px;
 }
 .saboreshel__gustos__imag {
   border-radius: 10px;
   border: 1px solid;
   display: flex;
-  display: inline-block;
-  flex-flow: wrap;
-  margin-left: 10px;
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: #DAE2F8;
   background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);
   background: linear-gradient(to right, #D6A4A4, #DAE2F8);
 }
 .saboreshel__gustos__imag img {
   width: 100%;
+  height: auto;
+  max-height: 150px;
+}
+.saboreshel__gustos__imag p {
+  margin: 10px 0 0 0;
+  text-align: center;
 }
 
 .sabores2 {
@@ -421,6 +422,12 @@ h3 {
 .contacto__sitiosweb__linkcontacto {
   margin-left: 15px;
 }
+.contacto__sitiosweb__linkcontacto img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 40%;
+}
 .contacto__direccion {
   justify-content: center;
   display: flex;
@@ -457,7 +464,7 @@ h3 {
 
 /* Footer */
 footer {
-  background-color: #f50000;
+  background: linear-gradient(to right, #ffb6bf, #e7122b);
   grid-area: footer;
   display: grid;
 }
@@ -490,11 +497,12 @@ footer {
   }
   .segtitulo {
     text-align: center;
-    padding: 120px;
+    padding: 95px;
     font-size: 30px;
   }
   .parrafopri {
     font-size: 10px;
+    font-weight: bold;
   }
   .contacto__sitiosweb {
     display: flex;
@@ -502,9 +510,8 @@ footer {
     justify-content: center;
     padding-bottom: 50px;
     padding-top: none;
-    margin-left: 15px;
-    margin-top: 15px;
-    display: inline-table;
+    margin: auto;
+    flex-wrap: wrap;
   }
   .contacto__sucursales__containermapa1 {
     width: 100%;
@@ -518,6 +525,7 @@ footer {
   }
   .mainimg {
     height: 300px;
+    background-size: cover;
   }
   .contacto__direccion {
     font-size: 10px;
@@ -594,8 +602,8 @@ footer {
 @media only screen and (min-width: 501px) and (max-width: 961px) {
   .segtitulo {
     text-align: center;
-    padding: 120px;
-    font-size: 40px;
+    padding: 163px;
+    font-size: 60px;
   }
   .contacto__sucursales__containermapa1 {
     width: 100%;

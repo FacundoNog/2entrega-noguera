@@ -8,12 +8,13 @@
 
     .segtitulo {
         text-align: center;
-        padding: 120px;
+        padding: 95px;
         font-size: 30px;
     }
 
     .parrafopri {
         font-size: map-get($titulos, normal);
+        font-weight: bold;
     }
 
     .contacto__sitiosweb {
@@ -21,9 +22,8 @@
         align-items: center;
         justify-content: center;
         @include spaciosorden (50px, none);
-        margin-left: 15px;
-        margin-top: 15px;
-        display: inline-table;
+        margin: auto;
+        flex-wrap: wrap;
     }
 
     .contacto__sucursales__containermapa1 {
@@ -40,6 +40,7 @@
 
     .mainimg {
         height: 300px;
+        background-size: cover;
     }
 
     .contacto__direccion {
@@ -137,8 +138,8 @@
 @media only screen and (min-width: 501px) and (max-width: 961px) {
     .segtitulo {
         text-align: center;
-        padding: 120px;
-        font-size: map-get($titulos, secundario);
+        padding: 163px;
+        font-size: map-get($titulos, principal);
     }
 
     .contacto__sucursales__containermapa1 {
