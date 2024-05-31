@@ -305,7 +305,9 @@ h3 {
 
 .fondosabores {
     display: grid;
-    @include fondoimagen
+    @include fondoimagen;
+    background-image: url(../assets/a2.jpg);
+
 }
 
 .titulosabores {
@@ -404,7 +406,7 @@ h3 {
     &__buscador {
         display: block;
         margin: 0 auto;
-        width: 30%;
+        width: 300px;
         text-align: center;
     }
 }
