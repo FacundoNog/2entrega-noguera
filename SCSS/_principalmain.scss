@@ -4,93 +4,103 @@ main {
 }
 
 .mainimg {
-    background: #ffffff url(../assets/vecteezy_helado-surtido-en-tazas_2032261.jpg) center center/cover no-repeat;
+    background: #ffffff url(../assets/Sweets_Ice_cream_Berry_498062.jpg);
     width: 100%;
     height: 600px;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
-.segtitulo {
+.titulo {
     text-align: center;
     font-family: $titulo-principal;
-    font-size: map-get($titulos, principal );
+    font-size: map-get($titulos, principal);
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     font-weight: bold;
-    
-    
-    
+
+
+
+}
+
+.containerparrafo {
+    background-color: $fondo-color-principal;
+    background-size: cover;
+    padding-bottom: 40px;
 }
 
 .parrafopri {
     text-align: center;
-    background-image: url(../assets/fondoblanco.jpg);
-    @include spaciosorden (40px, 40px);
+    @include spaciosorden (0px, 20px);
     margin-bottom: 0px;
-    font-size: map-get($titulos, terciario  );
+    font-size: map-get($titulos, terciario);
+    max-width: 70%;
+    margin: 0 auto;
+    font-weight: bold;
 }
 
 .tercertitulo {
     text-align: center;
-    @include spaciosorden (20px, 40px);
-    font-size: map-get($titulos, secundario );
+    @include spaciosorden (80px, 50px);
+    font-size: map-get($titulos, secundario);
 }
 
-.comentercertitulo {
-    text-align: center;
-    font-weight: bold;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: xx-large;
-}
+
 
 .titulos1 {
     justify-content: center;
-    @include spaciosorden (50px, 40px);
+    @include spaciosorden (50px, 10px);
 }
 
-.classh3 {
-    @include spaciosorden (30px, 30px);
-}
 
-section {
-    background-color: #dec9e0;
-}
 
 .sabores {
 
 
-    @include spaciosorden (100px, 40px);
-    background-image: url(../assets/2az.jpg);
+    @include spaciosorden (100px, 0px);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.zonasabores {
 
+    background-image: url(../assets/increcream.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 .saboreshel {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
-    &__gustos {
-        width: 200px;
-       &__imag {
-     
-        border-radius: 10px;
-        border: 1px solid;
-        display: flex;
-        display: inline-block;
-        flex-flow: wrap;
-        margin-left: 10px;
-        text-align: center;
-        background: #DAE2F8;
-        background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8); 
-        background: linear-gradient(to right, #D6A4A4, #DAE2F8); 
 
-        img {
-            width: 100%;
+    &__gustos {
+        width: 210px;
+        margin: 10px;
+
+        &__imag {
+            border-radius: 10px;
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $fondo-color-principal;
+
+
+            img {
+                width: 100%;
+                height: auto;
+                max-height: 150px;
+            }
+
+            p {
+                margin: 10px 0 0 0;
+                text-align: center;
+                font-weight: bold;
+            }
         }
-      }
     }
 }
 
@@ -101,12 +111,8 @@ section {
 .sabores2 {
     padding-bottom: 50px;
     justify-content: center;
-    background-image: url(../assets/fondoblanco.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-      
-     &__sucursales {
+
+    &__sucursales {
         display: flex;
         text-align: center;
         justify-content: center;
@@ -114,7 +120,6 @@ section {
 
     &__boton {
         @include botonbusqueda
-
     }
 
 }
@@ -129,32 +134,51 @@ h3 {
 
 
 /* Main Nosotros */
+.nosotrostitulo {
+    padding-left: 10%;
+    padding-bottom: 20px;
+    font-size: map-get($titulos, secundario);
+
+}
+
+.descripcionboom {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: bolder;
+}
+
 
 .seccionprinc {
     display: flex;
     flex-direction: column;
     align-items: center;
     @include spaciosorden (70px, 50px);
-    background-image: url(../assets/fondoblanco.jpg);
-    @include fondoimagen;
+    background-image: url(../assets/imagenfondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 
     p {
-        font-size: map-get($titulos, terciario);
+        font-size: 30px;
         text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 40px;
+        font-weight: bolder;
 
     }
+
 
     &__imghelado {
         width: 50%;
 
         &__titulo {
-           
-            font-size: map-get($titulos, secundario );
+
+            font-size: map-get($titulos, secundario);
         }
-        
-        }
+
     }
 
+}
 
 
 .carousel-item img {
@@ -164,9 +188,9 @@ h3 {
 .principalnosotros {
     @include spaciosorden (70px, 70px);
     background-image: url(../assets/vecteezy_helado-surtido-en-tazas_2032261.jpg);
-    background-size: 100% 100%; 
-    background-repeat: no-repeat; 
-    background-position: center; 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -176,205 +200,211 @@ h3 {
 .titucontacto {
     text-align: center;
     padding: 50px;
-    font-size: map-get($titulos, secundario );
-    font-family: $titulo-principal;
-    background-color: #ebebde;
+    font-size: map-get($titulos, secundario);
     margin-top: 10px
 }
 
 
 .contactoprinc {
     display: flex;
-    &__imag 
-        {
-            width: 60%;
-            padding-right: 50px;
-        
-            &__form 
-            {
-                display: grid;
-                position: static;
-                display: grid;
-                height: auto;
-                width: 100%;
-                min-height: auto;
-                grid-template-rows: repeat(5, min-content) 1fr;
-                grid-template-columns: 100%;
-                margin-right: 200px;
-            }
-        }
-    }
+    margin-left: 30px;
 
+    &__imag {
+        width: 60%;
+        padding-right: 50px;
 
-    .maincontacto {
-       background-color: #ebebde;
-       @include spaciosorden (50px, 5px);
-
-    }
-
-
-    /* Main Sucursales */
-
-    .mainsucursales {
-        background-image: url(../assets/heladosfruti.jpg);
-        
-        @include fondoimagen
-        }
-        
-    
-
-    .titulosucursales {
-         
-            text-align: center;
-            font-size: map-get($titulos, secundario );
-            @include spaciosorden (50px, 50px);
-        }
-    
-
-    .ciudadsucursales {
-        
-            
-          
-            justify-content: center;
-            font-size: map-get($titulos, terciario );
-            font-style: unset;
+        &__form {
             display: grid;
-            margin-top: 60px;
-            font-style: normal;
-
-            &__calles {
-                font-weight: bold;
-            }
-        
-    }
-
-    .tituciudad {
-        margin-top: 50px;
-    }
-
-    .seccionbuscador {
-        
+            position: static;
             display: grid;
-            justify-content: center;
-            margin-top: 50px;
-           
+            height: auto;
+            width: 100%;
+            min-height: auto;
+            grid-template-rows: repeat(5, min-content) 1fr;
+            grid-template-columns: 100%;
+            margin-right: 200px;
+        }
+    }
+}
 
-            &__texto {
-                width: 100%;
-                text-align: center;
 
-            }
+.maincontacto {
+    background-image: url(../assets/modern-white-background-free-vector.jpg);
+    @include spaciosorden (50px, 5px);
 
-            &__sucursal {
-                margin-bottom: 60px;
-                width: 450px;
-                
-            }
+}
 
-            
 
-        
+/* Main Sucursales */
+
+.mainsucursales {
+    background-image: url(../assets/Sweets_Ice_cream_Cherry_Wood_planks_553330_1280x905\ \(1\).jpg);
+
+    @include fondoimagen
+}
+
+
+
+.titulosucursales {
+
+    text-align: center;
+    font-size: map-get($titulos, secundario);
+    @include spaciosorden (50px, 50px);
+}
+
+
+.ciudadsucursales {
+
+
+
+    justify-content: center;
+    font-size: map-get($titulos, terciario);
+    font-style: unset;
+    display: grid;
+    margin-top: 60px;
+    font-style: normal;
+
+    &__calles {
+        font-weight: bold;
     }
 
-    /* Main Sabores */
+}
 
-    .fondosabores {
-        background-image: url(../assets/fondoblanco.jpg);
-        background-color: red;
-        display: grid;
-        @include fondoimagen
+.tituciudad {
+    margin-top: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
 
-        
+.seccionbuscador {
+
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+
+
+    &__texto {
+        width: 100%;
+        text-align: center;
+
     }
-    
-    .titulosabores {
-        display: grid;
-        &__1 {
-            
-                display: flex;
-                justify-content: center;
-                margin-top: 100px;
-                margin-bottom: 80px;
-             }
-        
+
+    &__sucursal {
+        margin-bottom: 60px;
+        width: 450px;
+
     }
- 
-    .mainsabores {
+
+
+
+
+}
+
+/* Main Sabores */
+
+.fondosabores {
+    display: grid;
+    @include fondoimagen
+}
+
+.titulosabores {
+    display: grid;
+
+    &__1 {
+
         display: flex;
-    
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 100px;
-            flex-wrap: wrap;
-     
-        
-        &__hel1 {
-            margin-left: 50px;
-        
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+
+}
+
+.mainsabores {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+
+
+    &__hel1 {
+        margin-left: 50px;
+
         p {
             display: flex;
             justify-content: center;
             font-size: x-large;
-        }
+            background-color: $fondo-color-principal;
         }
     }
-       
-    
+}
 
-    .mainsabores2 {
-        
-    
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 100px;
-            flex-wrap: wrap;
-     
-        
-        &__hel2 {
-            margin-left: 50px;
-        
+
+
+.mainsabores2 {
+    display: flex;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+
+
+    &__hel2 {
+        margin-left: 50px;
+
         p {
             display: flex;
             justify-content: center;
             font-size: $font-size;
-        }
+            background-color: $fondo-color-principal;
+
         }
     }
+}
 
-    
-    .mainsabores3 {
-      
-    
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 100px;
-            flex-wrap: wrap;
-     
-        
-        &__hel3 {
-            margin-left: 50px;
-        
+
+.mainsabores3 {
+    display: flex;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+
+
+    &__hel3 {
+        margin-left: 50px;
+
         p {
             display: flex;
             justify-content: center;
             font-size: $font-size;
-        }
+            background-color: $fondo-color-principal;
+
         }
     }
+}
 
-    .buscasabores {
-        margin-bottom: 100px;
+.buscasabores {
+    margin-bottom: 100px;
 
-        &__tit {
-            margin-bottom: 50px;
+    &__tit {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
 
-        }
-        &__buscador {
-            display: block;
-            margin: 0 auto;
-            width: 30%;
-            text-align: center;
-        }
     }
+
+    &__buscador {
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+        text-align: center;
+    }
+}

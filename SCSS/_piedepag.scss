@@ -1,7 +1,6 @@
-
 /* Footer */
 footer {
-    background-color: #fa1515;
+    background: linear-gradient(to right, #ffb6bf, #e7122b);
     grid-area: footer;
     display: grid;
 }
@@ -20,6 +19,7 @@ footer {
             color: #100001;
             text-align: center;
             text-decoration: none;
+            font-weight: bolder;
         }
     }
 }

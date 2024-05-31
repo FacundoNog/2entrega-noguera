@@ -1,27 +1,29 @@
-/* Media Queries */ 
+/* Media Queries */
 
 @media only screen and (max-width: 500px) {
     body {
         width: 100%;
 
     }
-    .segtitulo {
+
+    .titulo {
         text-align: center;
-        padding: 120px;
+        padding-top: 40px;
         font-size: 30px;
     }
+
     .parrafopri {
-        font-size: map-get($titulos, normal );
+        font-size: map-get($titulos, terciario);
+        font-weight: bold;
     }
-    
+
     .contacto__sitiosweb {
         display: flex;
         align-items: center;
         justify-content: center;
         @include spaciosorden (50px, none);
-        margin-left: 15px;
-        margin-top: 15px;
-        display: inline-table;
+        margin: auto;
+        flex-wrap: wrap;
     }
 
     .contacto__sucursales__containermapa1 {
@@ -32,39 +34,52 @@
         display: none;
     }
 
+    .contacto__direccion {
+        font-size: map-get($titulos, terciario);
+        border: none;
+        font-weight: bold;
+
+    }
+
     main {
         display: flow;
     }
+
     .mainimg {
         height: 300px;
-    }
-    
-    .contacto__direccion {
-        font-size: 10px;
+        background-position-x: left;
     }
 
-    .boom {
-        display: flex;
-    }
+
+
 
     .copy {
         font-size: 15px;
     }
 
+    .seccionprinc {
+        p {
+            font-size: 20px;
 
-    .mainsabores, .mainsabores2,  .mainsabores3 {
-    margin-bottom:  30px;
+        }
+    }
 
-             &__hel1,
-             &__hel2,
-             &__hel3 {
+    .mainsabores,
+    .mainsabores2,
+    .mainsabores3 {
+        margin-bottom: 30px;
+
+        &__hel1,
+        &__hel2,
+        &__hel3 {
             margin-left: 0px;
-             }
-            &__hel3__img,
-            &__hel2__img,
-            &__hel1__img {
-                max-width: 250px; 
-            
+        }
+
+        &__hel3__img,
+        &__hel2__img,
+        &__hel1__img {
+            max-width: 250px;
+
         }
     }
 
@@ -78,94 +93,102 @@
 
     .contactoprinc__imag__form {
         display: grid;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(5, min-content) 1fr;
-        gap: 10px; 
-        margin-right: 20px; 
+        gap: 10px;
+        margin-right: 20px;
         margin-left: 20px;
     }
-        
-        textarea {
-            height: 140px;
-         }
 
-         .seccionbuscador {
-            margin-left: none;
-            &__sucursal {
-                margin-left: 5px;
-                width: 300px;
-            }
-            
-         }
-
-         .buscasabores {
-            &__buscador {
-                display: block;
-                margin: 0 auto;
-                text-align: center;
-                width: 90%;
-            }
-         }
-
-         .titulosabores {
-            &__1 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 100px;
-                margin-bottom: 80px;
-                flex-wrap: wrap;
-                text-align: center;
-            }
-
-         }
-
-         .mapsucu {
-            display: none;
-
-         }
+    textarea {
+        height: 140px;
     }
 
+    .seccionbuscador {
+        margin-left: none;
 
-@media only screen and (min-width: 501px) and (max-width: 961px) {
-    .segtitulo {
-        text-align: center;
-        padding: 120px;
-        font-size: map-get($titulos, secundario );
-    }
+        &__sucursal {
+            margin-left: 5px;
+            width: 300px;
+        }
 
-    .contacto__sucursales__containermapa1 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 30px;
     }
-
-    .contacto {
-        background-color: #d8a5df;
-        padding-top: 50px;
-        width: 100%;
-        display: flow-root;
-    }
-    .copy {
-        margin-bottom: 0px;
-       }
 
     .buscasabores {
         &__buscador {
-            width: 60%;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 90%;
         }
     }
 
+    .titulosabores {
+        &__1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-bottom: 80px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
 
+    }
+
+    .mapsucu {
+        display: none;
+
+    }
+
+    .encabezado__logo__img {
+
+        height: 120px;
+        width: 200px;
+
+    }
+
+
+
+    @media only screen and (min-width: 501px) and (max-width: 961px) {
+        .segtitulo {
+            text-align: center;
+            padding: 163px;
+            font-size: map-get($titulos, principal);
+        }
+
+        .contacto__sucursales__containermapa1 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 30px;
+        }
+
+        .contacto {
+            padding-top: 50px;
+            width: 100%;
+
+
+
+            .copy {
+                margin-bottom: 0px;
+            }
+
+            .buscasabores {
+                &__buscador {
+                    width: 60%;
+                }
+            }
+
+
+        }
+
+
+        @media only screen and (min-width: 901px) {
+            .copy {
+                margin-bottom: 0px;
+            }
+        }
+    }
 }
-
-
-@media only screen and (min-width: 901px) {
-   .copy {
-    margin-bottom: 0px;
-   }
-
-}
-

@@ -16,8 +16,17 @@
 
         &__linkcontacto {
             margin-left: 15px;
+
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 40%;
+            }
         }
     }
+
+
 
     &__direccion {
         justify-content: center;
@@ -25,13 +34,20 @@
         flex-wrap: wrap;
         padding-bottom: 40px;
         font-size: 20px;
+        border: solid;
         text-align: center;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        font-weight: bold;
     }
 
     &__sucursales {
         padding-bottom: 40px;
         display: flex;
         justify-content: center;
+        padding-top: 40px;
 
         &__boton {
             @include botonbusqueda;
