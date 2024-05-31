@@ -6,37 +6,29 @@
     background-attachment: fixed;
     position: sticky;
     top: 0;
-    padding-bottom: 30px;
-    display: grid;
-    grid-area: header;
-    background: linear-gradient(to right, #ffb6bf, #e7122b);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eeeeee;
     z-index: 999;
-}
+    padding: 10px 20px;
 
-.encabezado2 {
-    background-color: #f3f3f3;
-    width: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    top: 0;
-    padding-bottom: 10px;
-    grid-area: header;
-    z-index: 999;
-    position: sticky;
-    background-attachment: fixed;
+    &__logo {
+        display: flex;
+        justify-content: center;
+    }
 
-
-
+    img {
+        height: 180px;
+        width: 200px;
+    }
 }
 
 
-.boom {
-    font-family: "Dancing Script", cursive;
-    text-align: center;
-    font-weight: 500;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    font-size: map-get($titulos, secundario);
 
+
+
+
+.nav-item {
+    font-weight: bold;
 }
-

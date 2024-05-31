@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" />
-    <!-- Opengraph -->
+  <!-- Opengraph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="BOOM Helados">
-  <meta property="og:url" content="https://facundonog.github.io/3raentrega-noguera/">
+  <meta property="og:url" content="https://facundonog.github.io/PF-Noguera/">
   <meta property="og:image"
-    content="https://github.com/FacundoNog/3raentrega-noguera/blob/main/assets/nissan-e-nv200-1-1_opt-1024x576.jpg">
-    <!-- KW-Description-->
-    <meta name="keywords" content="sabores, gustos, helados, variedades, busca tu favorito, tipos de sabores">
-    <meta name="description" content="Variedad de sabores única en la region, buscá tu favorito y veni a probarlos!">
+   content="https://github.com/FacundoNog/PF-Noguera/blob/main/assets/nissan-e-nv200-1-1_opt-1024x576.jpg">
+  <!-- KW-Description-->
+  <meta name="keywords" content="sabores, gustos, helados, variedades, busca tu favorito, tipos de sabores">
+  <meta name="description" content="Variedad de sabores única en la region, buscá tu favorito y veni a probarlos!">
   <!-- Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,56 +30,46 @@
   <title>SABORES-BOOM</title>
 
 
-  
+
 
 </head>
 
 <body>
   <div class="grid-container">
-
     <header class="encabezado">
-      <h2 class="boom">BOOM Helados</h2>
-      <nav class="navbar fixed-top">
+      <a class="logoencabezado" href="/index.html">
+        <img class="logoencabezado__img" src="../assets/nuevologo1.jpg" alt="BOOM Helados">
+      </a>
+
+      <nav class="navbar navbar-expand-lg navegadoredit">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BOOM</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./sucursales.html">Sucursales</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./sabores.html">Sabores</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
-
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-              </form>
-            </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./sucursales.html">Sucursales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./sabores.html">Sabores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
-
     <main>
 
       <section class="fondosabores">
@@ -138,8 +128,6 @@
               alt="Facebook"></a>
           <a href="linkdetiktok" class="contacto__sitiosweb__linkcontacto"><img src="../assets/tiktok.jpg"
               alt="TikTok"></a>
-          <a href="linkdeyoutube" class="contacto__sitiosweb__linkcontacto"><img src="../assets/youtube.jpg"
-              alt="YouTube"></a>
         </div>
         <p class="contacto__direccion">AVENIDA LAVALLE 2323 POSADAS, MISIONES<br>
           boomhelados@gmail.com<br>
@@ -147,7 +135,7 @@
           Atención lunes a viernes de 9:00 a 20:00hs</p>
 
         <div class="contacto__sucursales">
-          <a href="./html/sucursales.html" class="contacto__sucursales__boton">Encontrá tu Sucursal mas Cercana!</a>
+          <a href="./sucursales.html" class="contacto__sucursales__boton">Encontrá tu Sucursal mas Cercana!</a>
         </div>
         <div class="contacto__sucursales__containermapa1">
           <iframe
