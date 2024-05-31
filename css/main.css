@@ -41,7 +41,7 @@
   justify-content: center;
 }
 .encabezado img {
-  height: 180px;
+  width: 120px;
 }
 
 .nav-item {
@@ -309,6 +309,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-image: url(../assets/a2.jpg);
 }
 
 .titulosabores {
@@ -340,6 +341,7 @@ h3 {
 
 .mainsabores2 {
   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 100px;
@@ -356,6 +358,7 @@ h3 {
 }
 
 .mainsabores3 {
+  display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -383,7 +386,7 @@ h3 {
 .buscasabores__buscador {
   display: block;
   margin: 0 auto;
-  width: 30%;
+  width: 300px;
   text-align: center;
 }
 
@@ -596,8 +599,7 @@ footer {
     display: none;
   }
   .encabezado__logo__img {
-    height: 120px;
-    width: 200px;
+    width: 120px;
   }
 }
 @media only screen and (max-width: 500px) and (min-width: 501px) and (max-width: 961px) {
