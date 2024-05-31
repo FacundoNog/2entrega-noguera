@@ -13,7 +13,7 @@
     }
 
     .parrafopri {
-        font-size: map-get($titulos, normal);
+        font-size: map-get($titulos, terciario);
         font-weight: bold;
     }
 
@@ -34,6 +34,13 @@
         display: none;
     }
 
+    .contacto__direccion {
+        font-size: map-get($titulos, terciario);
+        border: none;
+        font-weight: bold;
+
+    }
+
     main {
         display: flow;
     }
@@ -43,13 +50,8 @@
         background-position-x: left;
     }
 
-    .contacto__direccion {
-        font-size: 10px;
-    }
 
-    .boom {
-        display: flex;
-    }
+
 
     .copy {
         font-size: 15px;
@@ -142,7 +144,8 @@
     .encabezado__logo__img {
 
         height: 120px;
-        width: 140px;
+        width: 200px;
+
     }
 
 

@@ -24,14 +24,14 @@ main {
 }
 
 .containerparrafo {
-    background-image: url(../assets/fondoblanco.jpg);
+    background-color: $fondo-color-principal;
     background-size: cover;
     padding-bottom: 40px;
 }
 
 .parrafopri {
     text-align: center;
-    @include spaciosorden (40px, 40px);
+    @include spaciosorden (0px, 20px);
     margin-bottom: 0px;
     font-size: map-get($titulos, terciario);
     max-width: 70%;
@@ -49,11 +49,7 @@ main {
 
 .titulos1 {
     justify-content: center;
-    @include spaciosorden (50px, 40px);
-}
-
-.classh3 {
-    @include spaciosorden (30px, 30px);
+    @include spaciosorden (50px, 10px);
 }
 
 
@@ -205,7 +201,6 @@ h3 {
     text-align: center;
     padding: 50px;
     font-size: map-get($titulos, secundario);
-    font-family: $titulo-principal;
     margin-top: 10px
 }
 
@@ -277,6 +272,9 @@ h3 {
 
 .tituciudad {
     margin-top: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .seccionbuscador {
@@ -306,8 +304,6 @@ h3 {
 /* Main Sabores */
 
 .fondosabores {
-    background-image: url(../assets/a2.jpg);
-    background-color: red;
     display: grid;
     @include fondoimagen
 }
@@ -400,6 +396,8 @@ h3 {
 
     &__tit {
         margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
 
     }
 
